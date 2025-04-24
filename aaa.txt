@@ -1,0 +1,39 @@
+import pandas as pd
+import torch
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
+
+# ✅ Check for CUDA
+device = 0 if torch.cuda.is_available() else -1
+
+# ✅ Load DataFrame (replace with your actual data)
+df = pd.DataFrame({
+    'text': [
+        "Long article or paragraph that needs summarizing...",
+        "Another long chunk of text to summarize...",
+        # Add more as needed
+    ]
+})
+
+# ✅ Load tokenizer and model (e.g., BART or T5)
+model_name = "facebook/bart-large-cnn"  # You can also try "t5-base", etc.
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name).to('cuda' if torch.cuda.is_available() else 'cpu')
+
+# ✅ Create summarization pipeline
+summarizer = pipeline("summarization", model=model, tokenizer=tokenizer, device=device)
+
+# ✅ Apply summarization to DataFrame column
+def summarize_text(text):
+    if len(text.strip()) == 0:
+        return ""
+    try:
+        summary = summarizer(text, max_length=130, min_length=30, do_sample=False)
+        return summary[0]['summary_text']
+    except Exception as e:
+        return f"Error: {e}"
+
+# ✅ Apply to column and store in new column
+df['summary'] = df['text'].apply(summarize_text)
+
+# ✅ Show result
+print(df[['text', 'summary']])
