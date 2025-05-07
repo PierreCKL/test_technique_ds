@@ -1,0 +1,20 @@
+## CONSOLIDATED PROFIT &amp; LOSS ACCOUNT -GROUP
+
+|                                                    | 1Q24   | 1Q23   | 1Q24 /   | 4Q23   | 1Q24 /   |
+|----------------------------------------------------|--------|--------|----------|--------|----------|
+| €m                                                 |        | Dist.  | 1Q23     | Dist.  | 4Q23     |
+| Group                                              |        |        |          |        |          |
+| Revenues                                           | 12,483 | 12,534 | -0.4%    | 10,953 | +14.0%   |
+| Operating Expenses and Dep.                        | -7,937 | -8,058 | -1.5%    | -7,545 | +5.2%    |
+| Gross Operating Income                             | 4,546  | 4,476  | +1.6%    | 3,408  | +33.4%   |
+| Cost of Risk                                       | -640   | -592   | +8.1%    | -972   | -34.2%   |
+| Other net losses for risk on financial instruments | -5     | 0      | n.s.     | 0      | n.s.     |
+| Operating Income                                   | 3,901  | 3,884  | +0.4%    | 2,436  | +60.1%   |
+| Share of Earnings of Equity-Method Entities        | 221    | 178    | +24.2%   | 73     | n.s.     |
+| Other Non Operating Items                          | 241    | 0      | n.s.     | -95    | n.s.     |
+| Pre-Tax Income                                     | 4,363  | 4,062  | +7.4%    | 2,414  | +80.7%   |
+| Corporate Income Tax                               | -1,166 | -791   | +47.4%   | -337   | n.s.     |
+| Net Income Attributable to Minority Interests      | -94    | -98    | -4.1%    | -70    | +34.3%   |
+| Net Income from discontinued activities            | 0      | 0      | n.s.     | 0      | n.s.     |
+| Net Income Attributable to Equity Holders          | 3,103  | 3,173  | -2.2%    | 2,007  | +54.6%   |
+| Cost/income                                        | 63.6%  | 64.3%  | -0.7 pt  | 68.9%  | -5.3 pt  |
